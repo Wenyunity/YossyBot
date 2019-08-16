@@ -1,0 +1,23 @@
+{
+  "name": "glitzbot",
+  "version": "1.0.0",
+  "description": "Glitz Pit Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "fill in eventually"
+  },
+  "keywords": [
+    "Glitz"
+  ],
+  "author": "What",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^5.4.2",
+    "discord.js": "^11.5.1",
+    "eslint": "^6.1.0"
+  }
+}

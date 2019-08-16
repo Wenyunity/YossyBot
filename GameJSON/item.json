@@ -1,0 +1,230 @@
+{
+  "000": {
+    "name": "Mushroom",
+    "description": "Heals Danger HP.",
+    "cost": 5,
+    "sale": true
+  },
+  "001": {
+    "name": "Super Shroom",
+    "description": "Heals 2x Danger HP.",
+    "cost": 12,
+    "sale": true
+  },
+  "002": {
+    "name": "Shroom Steak",
+    "description": "Heals 4x Danger HP.",
+    "cost": 25,
+    "sale": true
+  },
+  "003": {
+    "name": "Slow Shroom",
+    "description": "Gives Regen-2 for 5 turns.",
+    "cost": 10,
+    "sale": true
+  },
+  "004": {
+    "name": "Stamina Juice",
+    "description": "Gives Regen-4 for 5 turns.",
+    "cost": 20,
+    "sale": false
+  },
+  "005": {
+    "name": "Meteor Meal",
+    "description": "Heals Danger HP and gives Regen-4 for 5 turns.",
+    "cost": 15,
+    "sale": false
+  },
+  "010": {
+    "name": "Honey Syrup",
+    "description": "Heals 5 FP.",
+    "cost": 5,
+    "sale": true
+  },
+  "011": {
+    "name": "Maple Syrup",
+    "description": "Heals 10 FP.",
+    "cost": 12,
+    "sale": true
+  },
+  "012": {
+    "name": "Special Shake",
+    "description": "Heals 20 FP.",
+    "cost": 25,
+    "sale": true
+  },
+  "013": {
+    "name": "Gradual Syrup",
+    "description": "Gives FP-Regen-2 for 5 turns.",
+    "cost": 10,
+    "sale": true
+  },
+  "014": {
+    "name": "Koopa Tea",
+    "description": "Gives FP-Regen-4 for 5 turns.",
+    "cost": 20,
+    "sale": false
+  },
+  "020": {
+    "name": "Hot Dog",
+    "description": "Heals Danger HP and 5 FP.",
+    "cost": 12,
+    "sale": true
+  },
+  "021": {
+    "name": "Chili Cheese Dog",
+    "description": "Heals 2x Danger HP and 10 FP.",
+    "cost": 25,
+    "sale": true
+  },
+  "022": {
+    "name": "Zess Special",
+    "description": "Heals 4x Danger HP and 20 FP.",
+    "cost": 37,
+    "sale": false
+  },
+  "100": {
+    "name": "Thunder Bolt",
+    "description": "Deals 1.5x ATK damage to any opponent.",
+    "cost": 7,
+    "sale": true
+  },
+  "101": {
+    "name": "Shell Shock",
+    "description": "Deals 2x ATK damage to any opponent.",
+    "cost": 12,
+    "sale": true
+  },
+  "102": {
+    "name": "HP Drain",
+    "description": "Deals 1.5x ATK damage to any opponent. Drains HP.",
+    "cost": 12,
+    "sale": false
+  },
+  "110": {
+    "name": "POW Block",
+    "description": "Deals 1x ATK quake damage.",
+    "cost": 5,
+    "sale": true
+  },
+  "111": {
+    "name": "Earth Quake",
+    "description": "Deals 1.5x ATK quake damage.",
+    "cost": 12,
+    "sale": true
+  },
+  "112": {
+    "name": "Thunder Rage",
+    "description": "Deals 1.5x ATK damage to all opponents.",
+    "cost": 15,
+    "sale": true
+  },
+  "113": {
+    "name": "Shooting Star",
+    "description": "Deals 2x ATK damage to all opponents.",
+    "cost": 25,
+    "sale": true
+  },
+  "120": {
+    "name": "Fire Flower",
+    "description": "Deals 1x ATK fire damage to all opponents. Burns for 3 turns.",
+    "cost": 7,
+    "sale": true
+  },
+  "121": {
+    "name": "Ice Storm",
+    "description": "Deals 1x ATK ice damage to all opponents. May freeze for 2 turns.",
+    "cost": 10,
+    "sale": true
+  },
+  "122": {
+    "name": "Snowman Doll",
+    "description": "Deals 1.5x ATK ice damage to all opponents. May freeze for 2 turns.",
+    "cost": 20,
+    "sale": true
+  },
+  "123": {
+    "name": "Zess Dynamite",
+    "description": "Deals 2x ATK explosion damage to all opponents.",
+    "cost": 22,
+    "sale": false
+  },
+  "200": {
+    "name": "Tasty Tonic",
+    "description": "Cures all status ailments.",
+    "cost": 5,
+    "sale": true
+  },
+  "201": {
+    "name": "Point Swap",
+    "description": "Swaps HP and FP.",
+    "cost": 7,
+    "sale": false
+  },
+  "210": {
+    "name": "Volt Shroom",
+    "description": "Gives electrified for 3 turns.",
+    "cost": 7,
+    "sale": true
+  },
+  "211": {
+    "name": "Courage Shell",
+    "description": "Increases DEF by 2 for 3 turns.",
+    "cost": 12,
+    "sale": true
+  },
+  "212": {
+    "name": "Power Punch",
+    "description": "Increases ATK by 2 for 3 turns.",
+    "cost": 12,
+    "sale": true
+  },
+  "213": {
+    "name": "Repel Cape",
+    "description": "Gives dodgy for 2 turns.",
+    "cost": 12,
+    "sale": true
+  },
+  "214": {
+    "name": "Block Block",
+    "description": "Gives guard (1/2 damage) for 2 turns.",
+    "cost": 17,
+    "sale": true
+  },
+  "215": {
+    "name": "Spite Pouch",
+    "description": "Gives payback for 2 turns.",
+    "cost": 17,
+    "sale": true
+  },
+  "216": {
+    "name": "Sammer Medal",
+    "description": "Gives fast for 2 turns.",
+    "cost": 25,
+    "sale": false
+  },
+  "300": {
+    "name": "Mr. Softener",
+    "description": "Gives the enemy team soft for 3 turns.",
+    "cost": 12,
+    "sale": true
+  },
+  "301": {
+    "name": "Mini Mr. Mini",
+    "description": "Gives the enemy team shrink for 3 turns.",
+    "cost": 12,
+    "sale": true
+  },
+  "302": {
+    "name": "Ruin Powder",
+    "description": "Gives the enemy team confusion for 2 turns.",
+    "cost": 17,
+    "sale": true
+  },
+  "303": {
+    "name": "Sleepy Sheep",
+    "description": "Gives one enemy sleep for 2 turns.",
+    "cost": 12,
+    "sale": true
+  }
+}

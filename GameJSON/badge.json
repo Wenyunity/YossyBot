@@ -1,0 +1,177 @@
+{
+  "400": {
+    "name": "Close Call",
+    "description": "When in Danger, attacks miss 25% of the time. Doesn't stack.",
+    "cost": 10,
+    "BP": 1,
+    "sale": true
+  },
+  "401": {
+    "name": "Last Stand",
+    "description": "When in Danger, enemy attacks deal half-damage. Doesn't stack.",
+    "cost": 10,
+    "BP": 1,
+    "sale": true
+  },
+  "402": {
+    "name": "Power Rush",
+    "description": "When in Danger, deal +2 damage with attacks. Doesn't stack.",
+    "cost": 10,
+    "BP": 1,
+    "sale": true
+  },
+  "410": {
+    "name": "Damage Dodge",
+    "description": "Take 1 less damage when defending.",
+    "cost": 30,
+    "BP": 3,
+    "sale": true
+  },
+  "411": {
+    "name": "Jumpman",
+    "description": "Enables your attacks to hit at any height",
+    "cost": 35,
+    "BP": 6,
+    "sale": true
+  },
+  "412": {
+    "name": "Hammerman",
+    "description": "Enables your attacks to hit at any depth",
+    "cost": 35,
+    "BP": 6,
+    "sale": true
+  },
+  "420": {
+    "name": "Spike Shield",
+    "description": "Allows direct attacks to safely damage spiky enemies.",
+    "cost": 30,
+    "BP": 4,
+    "sale": true
+  },
+  "421": {
+    "name": "Ice Power",
+    "description": "Allows direct attacks to safely damage fiery enemies.",
+    "cost": 30,
+    "BP": 4,
+    "sale": true
+  },
+  "422": {
+    "name": "Zap Tap",
+    "description": "Allows direct attacks to safely damage elecrified enemies. Electrifies the user.",
+    "cost": 45,
+    "BP": 5,
+    "sale": true
+  },
+  "430": {
+    "name": "Feeling Fine",
+    "description": "Become immune to Poison, Burn, Dizzy, Blind, Confusion, and Slow.",
+    "cost": 40,
+    "BP": 7,
+    "sale": true
+  },
+  "431": {
+    "name": "Pretty Lucky",
+    "description": "20% chance to dodge attacks. Does not stack.",
+    "cost": 45,
+    "BP": 7,
+    "sale": true
+  },
+  "432": {
+    "name": "Lucky Start",
+    "description": "Start with the invisible, fast, or payback status for two turns.",
+    "cost": 50,
+    "BP": 7,
+    "sale": true
+  },
+  "440": {
+    "name": "P-Down, D-Up",
+    "description": "*Decreases* damage dealt and received by one.",
+    "cost": 40,
+    "BP": 4,
+    "sale": true
+  },
+  "441": {
+    "name": "P-Up, D-Down",
+    "description": "*Increases* damage dealt and received by one.",
+    "cost": 40,
+    "BP": 4,
+    "sale": true
+  },
+  "450": {
+    "name": "HP Plus",
+    "description": "Increase max HP by half your level. Does not stack.",
+    "cost": 30,
+    "BP": 3,
+    "sale": true
+  },
+  "451": {
+    "name": "Happy Heart",
+    "description": "Recover 2 HP at the beginning of each turn.",
+    "cost": 40,
+    "BP": 5,
+    "sale": true
+  },
+  "460": {
+    "name": "FP Plus",
+    "description": "Increase max FP by half your level. Does not stack.",
+    "cost": 30,
+    "BP": 4,
+    "sale": true
+  },
+  "461": {
+    "name": "Happy Flower",
+    "description": "Recover 1 FP at the beginning of each turn.",
+    "cost": 40,
+    "BP": 5,
+    "sale": true
+  },
+  "462": {
+    "name": "Flower Saver",
+    "description": "The cost of FP moves is lowered by 1.",
+    "cost": 35,
+    "BP": 5,
+    "sale": true
+  },
+  "463": {
+    "name": "Pity Flower",
+    "description": "Recover 1 FP when damaged by an attack.",
+    "cost": 50,
+    "BP": 7,
+    "sale": true
+  },
+  "500": {
+    "name": "Charge",
+    "description": "Adds Charge (1 FP) to commands. Charge boosts your next attack by 1x ATK.",
+    "cost": 30,
+    "BP": 3,
+    "sale": true
+  },
+  "510": {
+    "name": "Hammer Throw",
+    "description": "Increase a single-target attack’s FP cost by 1 and allow it to reach anywhere.",
+    "cost": 20,
+    "BP": 2,
+    "sale": true
+  },
+  "511": {
+    "name": "Piercing Blow",
+    "description": "Increase a single-target attack’s FP cost by 2 and allow it to pierce defense.",
+    "cost": 35,
+    "BP": 3,
+    "sale": true
+  },
+  "512": {
+    "name": "Tornado Jump",
+    "description": "Increase one attack’s power by 2 but limit its range to Floating and Flying only.",
+    "cost": 40,
+    "BP": 6,
+    "sale": true
+  },
+  "513": {
+    "name": "Quake Hammer",
+    "description": "Increase one attack’s power by 2 but limit its range to Ground and Ceiling only.",
+    "cost": 40,
+    "BP": 6,
+    "sale": true
+  }
+}

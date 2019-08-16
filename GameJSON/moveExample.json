@@ -1,0 +1,13 @@
+{
+  "name": "VERY BETA PLEASE IGNORE",
+  "FP": 4,
+  "target": "enemy",
+  "enemy": {
+    "target": "AoE"
+  },
+  "ally": {
+    "target": "self"
+  },
+  "conditional": [
+  ]
+}
