@@ -1,5 +1,5 @@
-const items = require('./constants.js').items;
-const badges = require('./constants.js').badges;
+const items = require('../constants.js').items;
+const badges = require('../constants.js').badges;
 const itembuy = require('./itembuy.js');
 const badgebuy = require('./badgebuy.js');
 

@@ -1,6 +1,6 @@
-const badges = require('./constants.js').badges;
-const load = require('./constants.js').loadCheck;
-const save = require('./constants.js').saveData;
+const badges = require('../constants.js').badges;
+const load = require('../constants.js').loadCheck;
+const save = require('../constants.js').saveData;
 
 module.exports = {
 	name: 'badgebuy',

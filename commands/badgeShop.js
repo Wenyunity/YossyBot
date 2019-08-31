@@ -1,6 +1,6 @@
 // -- REQUIRED --
-const badges = require('./constants.js').badges;
-const store = require('./constants.js').badgeStore;
+const badges = require('../constants.js').badges;
+const store = require('../constants.js').badgeStore;
 const Discord = require('discord.js');
 const moduleColor = "#FF9900";
 

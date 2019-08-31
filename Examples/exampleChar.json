@@ -1,0 +1,15 @@
+{
+  "name": "Hilda",
+  "HP": 54,
+  "MaxHP": 54,
+  "HPGain": 4,
+  "MP": 44,
+  "MaxMP": 44,
+  "MPGain": 4,
+  "ATK": 4,
+  "DEF": 2,
+  "position": "ground, floating, flying, ceiling",
+  "contact": "false, electric, fiery, spiky", 
+  "statusList": ["List of current statuses"],
+  "move": ["List of moves here"]
+}

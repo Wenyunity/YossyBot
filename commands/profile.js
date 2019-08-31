@@ -1,5 +1,5 @@
 // -- REQUIRES --
-const load = require('./constants.js').loadData;
+const load = require('../constants.js').loadData;
 const Discord = require('Discord.js');
 const moduleColor = "#FF9900";
 

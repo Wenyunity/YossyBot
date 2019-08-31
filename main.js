@@ -1,12 +1,14 @@
 // -- REQUIRES --
 const fs = require('fs');
 const Discord = require('discord.js');
-const { prefix, token } = require('./config.json');
+const startSQL = require('./SQLSetup.js').setup;
+const { prefix, token, modID } = require('./config.json');
 
 // -- CONSTANTS --
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
+const modCommandFiles = fs.readdirSync('./commandsMod').filter(file => file.endsWith('.js'));
 
 // Sets require for each file in commands
 for (const file of commandFiles) {
@@ -14,8 +16,15 @@ for (const file of commandFiles) {
 	client.commands.set(command.name, command);
 }
 
+// Also for those in modCommand
+for (const file of modCommandFiles) {
+	const command = require(`./commandsMod/${file}`);
+	client.commands.set(command.name, command);
+}
+
 // OnStart
 client.once('ready', () => {
+	startSQL();
 	console.log('Ready!');
 	client.user.setActivity('Wuigi\'s Anger', { type: 'WATCHING' });
 });
@@ -49,6 +58,10 @@ client.on('message', message => {
 		}
 
 		return message.channel.send(reply);
+	}
+
+	if (command.modOnly && !modID.includes(message.author.id)) {
+		return message.channel.send('This command is only usable by the moderator!');
 	}
 
 	try {

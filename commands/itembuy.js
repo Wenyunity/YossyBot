@@ -1,6 +1,6 @@
-const items = require('./constants.js').items;
-const load = require('./constants.js').loadCheck;
-const save = require('./constants.js').saveData;
+const items = require('../constants.js').items;
+const load = require('../constants.js').loadCheck;
+const save = require('../constants.js').saveData;
 
 module.exports = {
 	name: 'itembuy',
@@ -27,6 +27,8 @@ module.exports = {
         try {
           const data = load(args[0], message.author.id);
 
+					console.log(data);
+
           // Price check
           if (data.coins < (items[lookupValue].cost * numberBought)) {
             message.channel.send("You don't have enough coins to make this purchase!");
@@ -45,11 +47,14 @@ module.exports = {
             }
 
             // Save data and send message
+						console.log("We get to save");
             save(args[0], data);
+						console.log("Save complete");
             message.channel.send(`${data.teamName} bought **${numberBought}x ${items[lookupValue].name}** for ${(items[lookupValue].cost * numberBought)} coins.`);
           }
         }
         catch (err) {
+					console.log("we have error");
           message.channel.send(err);
         }
       }

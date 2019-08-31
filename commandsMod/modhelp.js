@@ -1,19 +1,20 @@
 const { prefix } = require('../config.json');
 
 module.exports = {
-	name: 'help',
-	description: 'List all of my commands or info about a specific command.',
-	aliases: ['commands'],
+	name: 'modhelp',
+	description: 'Lists all mod commands.',
+	aliases: ['modcommands'],
 	usage: '[command name]',
+  modOnly: true,
 	execute(message, args) {
 		const data = [];
 		const { commands } = message.client;
 
     // No arguments given, list all commands
 		if (!args.length) {
-			data.push('Here\'s a list of all my commands:');
+			data.push('Here\'s a list of all my mod commands:');
 			data.push(commands.map(function(cmd) {
-				if (!cmd.modOnly) {return cmd.name;}
+				if (cmd.modOnly) {return cmd.name;}
 				else {return;}
 			}).filter(Boolean).join(', '));
 			data.push(`\nYou can send \`${prefix}help [command name]\` to get info on a specific command!`);

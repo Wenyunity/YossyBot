@@ -1,5 +1,6 @@
 // -- REQUIRES --
 const fs = require('fs');
+const sqlGet = require('./SQLSetup.js');
 
 const items = JSON.parse(fs.readFileSync('./GameJSON/item.json', 'utf8'));
 const store = JSON.parse(fs.readFileSync('./GameJSON/store.json', 'utf8'));
@@ -8,6 +9,10 @@ const badgeStore = JSON.parse(fs.readFileSync('./GameJSON/badgeStore.json', 'utf
 
 // Needs to be added post-step
 const teamList = JSON.parse(fs.readFileSync('./Data/teamlist.json', 'utf8'));
+
+function checkTeam(teamID) {
+  return teamList[teamID];
+}
 
 // Loads team data
 function getTeamData(teamID) {
@@ -18,7 +23,7 @@ function getTeamData(teamID) {
 
   // Return data for that team
   try {
-    return JSON.parse(fs.readFileSync(`./Data/${teamList[teamID]}.json`, 'utf8'));
+    return { ...sqlGet.readTeam(teamID), ...JSON.parse(fs.readFileSync(`./Data/${teamList[teamID]}.json`, 'utf8')) };
   }
   catch (err) {
     throw "We couldn't find the data for that team!";
@@ -43,8 +48,28 @@ function saveTeamData(teamID, data) {
     throw "There was no team with that ID!";
   }
 
+  // SQL save
+  sqlGet.saveTeam(data);
+
+  // Team save
+  const dataJSON = { teamName: data.teamName, ownerID: data.ownerID, items: data.items, badges: data.badges, keyItems: data.keyItems };
   // Save data
-  fs.writeFile(`./Data/${teamList[teamID]}.json`, JSON.stringify(data, null, 2), function(err) {
+  fs.writeFile(`./Data/${teamList[teamID]}.json`, JSON.stringify(dataJSON, null, 2), function(err) {
+    if (err) throw err;
+  });
+}
+
+// Create team
+// Assumes ID doesn't already exist
+function createTeam(teamID, teamJSON, teamName) {
+  teamList[teamID] = teamID;
+  sqlGet.createTeam(teamID, teamName);
+  // Save teamlist
+  fs.writeFile('./Data/teamlist.json', JSON.stringify(teamList, null, 2), function(err) {
+    if (err) throw err;
+  });
+  // Save team data
+  fs.writeFile(`./Data/${teamID}.json`, JSON.stringify(teamJSON, null, 2), function(err) {
     if (err) throw err;
   });
 }
@@ -57,19 +82,6 @@ module.exports = {
   loadCheck: getTeamDataCheck,
   saveData: saveTeamData,
   badgeStore: badgeStore,
-
-  // Flips a coin, mainly for help
-  name: 'flip',
-	aliases: false,
-	description: 'Flips a coin.',
-  execute(message) {
-    let coin = '';
-    if(Math.random() < 0.5) {
-      coin = "**heads**";
-    }
-    else {
-      coin = "**tails**";
-    }
-    message.channel.send(`The coin flip has decided on ${coin}.`);
-  },
+  createTeam: createTeam,
+  checkTeam: checkTeam,
 };

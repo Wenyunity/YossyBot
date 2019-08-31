@@ -1,0 +1,21 @@
+{
+  "name": "Name of the move",
+  "FP": 0,
+  "description": "Description of the move",
+  "targetTypes": ["List showing", "What parameters the move has (enemy, ally, ground)"],
+  "enemy": {
+    "power": 6,
+    "hits": 1,
+    "defense": "standard, piercing",
+    "contact": "direct, indirect",
+    "range": "front, any, random, all",
+    "height": "ground, quake, select, or any",
+    "drain": false,
+    "effect": [["List of statuses given", 0, 1], ["And their length", 2, 1], ["And the chance 0-1", 1, 0.5], "or just false"]
+  },
+  "ally": {
+    "heal": 6,
+    "range": "self, any, all",
+    "effect": [["List of statuses given", 0, 1], ["And their length", 2, 1], ["And the chance 0-1", 1, 0.5]]
+  }
+}

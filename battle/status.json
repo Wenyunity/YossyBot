@@ -1,0 +1,86 @@
+{
+	"dizzy": {
+		"type": "accuracy",
+		"effect": 0.5,
+		"extendable": true,
+		"counts": "after",
+    "cooldown": false
+	},
+	"blind": {
+		"type": "accuracy",
+		"effect": 0.5,
+		"extendable": true,
+		"counts": "after",
+    "cooldown": false
+	},
+  "deadeye": {
+    "type": "accuracy",
+    "effect": 100,
+    "extendable": true,
+    "counts": "before",
+    "cooldown": false
+  },
+  "dodgy": {
+    "type": "dodge",
+    "effect": 0.5,
+    "extendable": true,
+    "counts": "before",
+    "cooldown": false
+  },
+  "invisible": {
+    "type": "dodge",
+    "effect": 0,
+    "extendable": false,
+    "counts": "after",
+    "cooldown": true
+  },
+	"big": {
+		"type": "power",
+		"effect": 2,
+		"extendable": true,
+		"counts": "after",
+    "cooldown": false
+	},
+	"tiny": {
+		"type": "power",
+		"effect": -2,
+		"extendable": true,
+		"counts": "after",
+    "cooldown": false
+	},
+	"def-up": {
+		"type": "defense",
+		"effect": 2,
+		"extendable": true,
+		"counts": "before",
+    "cooldown": false
+	},
+	"def-down": {
+		"type": "defense",
+		"effect": -2,
+		"extendable": true,
+		"counts": "before",
+    "cooldown": false
+	},
+	"poison": {
+		"type": "health",
+		"effect": -1,
+		"extendable": true,
+		"counts": "after",
+    "cooldown": false
+	},
+	"burn": {
+		"type": "health",
+		"effect": -1,
+		"extendable": true,
+		"counts": "after",
+    "cooldown": false
+	},
+	"regen": {
+		"type": "health",
+		"effect": 1,
+		"extendable": true,
+		"counts": "after",
+    "cooldown": false
+	}
+}
